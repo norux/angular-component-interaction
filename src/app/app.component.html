@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<h1> Hello! This is {{ title }}</h1>
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/test-router" routerLinkActive="active">Go Test Router</a>
+  <a routerLink="/another-router" routerLinkActive="active">Go Another Router</a>
+</nav>
+<input #myInput type="text" />
+<button (click)="clickButton(myInput.value)"> Send </button>
+<div>
+  <p>--- router-outlet start ---</p>
+  <router-outlet></router-outlet>
+  <p>--- router-outlet end ---</p>
+</div>
